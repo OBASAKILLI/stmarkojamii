@@ -140,4 +140,26 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // Mobile Bottom Nav Active State
+    const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+    const bottomNavItems = document.querySelectorAll('.mobile-bottom-nav .nav-item');
+    
+    bottomNavItems.forEach(item => {
+        const itemHref = item.getAttribute('href');
+        if (itemHref.includes(currentPath)) {
+            item.classList.add('active');
+        } else {
+            item.classList.remove('active');
+        }
+        
+        // Handle query params for specific pages
+        if (window.location.search) {
+            const pageId = new URLSearchParams(window.location.search).get('id');
+            if (itemHref.includes(`id=${pageId}`)) {
+                bottomNavItems.forEach(i => i.classList.remove('active'));
+                item.classList.add('active');
+            }
+        }
+    });
 });

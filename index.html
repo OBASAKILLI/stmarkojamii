@@ -15,6 +15,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <link rel="stylesheet" href="style.css">
+    
+    <!-- PWA & Mobile App Meta Tags -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#003366">
+    <link rel="apple-touch-icon" href="./assets/images/logo.png">
 </head>
 <body>
 
@@ -38,6 +44,9 @@
                     <span>Pay via M-Pesa</span>
                 </a>
             </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
         <div class="header-nav-container">
             <nav class="main-nav">
@@ -220,9 +229,6 @@
                 <a href="#"><i class="fab fa-youtube"></i></a>
                 <a href="#"><i class="fas fa-search"></i></a>
             </div>
-            <button class="mobile-menu-btn" id="mobileMenuBtn">
-                <i class="fas fa-bars"></i>
-            </button>
         </div>
     </header>
 
@@ -520,6 +526,30 @@
             </div>
         </div>
     </footer>
+
+    <!-- Mobile Bottom Navigation Bar -->
+    <nav class="mobile-bottom-nav">
+        <a href="index.html" class="nav-item active">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </a>
+        <a href="page.html?id=mass-times" class="nav-item">
+            <i class="fas fa-calendar-alt"></i>
+            <span>Mass</span>
+        </a>
+        <a href="page.html?id=donate" class="nav-item">
+            <i class="fas fa-hand-holding-heart"></i>
+            <span>Give</span>
+        </a>
+        <a href="page.html?id=community" class="nav-item">
+            <i class="fas fa-users"></i>
+            <span>Jumuiya</span>
+        </a>
+        <a href="page.html?id=contact" class="nav-item">
+            <i class="fas fa-envelope"></i>
+            <span>Contact</span>
+        </a>
+    </nav>
 
     <script src="main.js"></script>
 </body>

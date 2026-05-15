@@ -947,20 +947,50 @@ ul {
 @media (max-width: 768px) {
     /* Header & Logo */
     .header-top {
-        flex-direction: column;
-        align-items: center;
-        gap: 1.5rem;
-        padding: 1.5rem 1rem;
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        padding: 0.8rem 5% !important;
+        background-color: var(--bg-white);
     }
 
     .logo {
-        flex-direction: column;
-        text-align: center;
-        gap: 0.5rem;
+        flex-direction: row !important;
+        text-align: left !important;
+        gap: 0.8rem !important;
+        align-items: center !important;
     }
 
     .logo img {
-        height: 70px !important;
+        height: 50px !important;
+    }
+
+    .logo-text h1 {
+        font-size: 1.1rem !important;
+        margin-bottom: 0 !important;
+    }
+
+    .logo-text span {
+        font-size: 0.6rem !important;
+        display: block;
+    }
+
+    .header-nav-container {
+        display: none !important; /* Hide the separate blue bar on mobile */
+    }
+
+    .mobile-menu-btn {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        background: var(--primary-blue);
+        color: white;
+        border: none;
+        width: 45px;
+        height: 45px;
+        border-radius: 8px;
+        font-size: 1.2rem;
+        cursor: pointer;
     }
 
     .logo-text h1 {
@@ -1012,7 +1042,7 @@ ul {
     .hero-overlay-card {
         width: 100%;
         max-width: 100%;
-        padding: 2.5rem 1.5rem;
+        padding: 2rem 1.2rem;
         animation: fadeIn 1s ease-out;
     }
 
@@ -1031,8 +1061,13 @@ ul {
     }
 
     .circular-img-wrapper {
-        width: 130px;
-        height: 130px;
+        width: 110px;
+        height: 110px;
+    }
+    
+    .circular-link-item h3 {
+        font-size: 0.8rem !important;
+        margin-top: 1rem;
     }
 
     /* Events Redesign Responsiveness */
@@ -1041,13 +1076,17 @@ ul {
     }
 
     .event-date {
-        padding: 1.5rem;
+        padding: 1rem;
         border-bottom: 1px solid rgba(255,255,255,0.1);
     }
 
     .event-content {
-        padding: 2rem 1.5rem;
+        padding: 1.5rem 1rem;
         text-align: center;
+    }
+    
+    .event-content h3 {
+        font-size: 1.3rem !important;
     }
 
     .event-footer {
@@ -1068,7 +1107,11 @@ ul {
     }
 
     .scc-card {
-        padding: 2.5rem 1.5rem;
+        padding: 1.5rem 1rem;
+    }
+    
+    .scc-card h3 {
+        font-size: 1.2rem;
     }
 
     /* News Section */
@@ -1116,12 +1159,20 @@ ul {
         align-items: center;
         text-align: center;
     }
+
+    .mission-section {
+        padding: 4rem 1rem !important;
+    }
+
+    .mission-content h2 {
+        font-size: 2rem !important;
+    }
 }
 
 /* Super Small Devices */
 @media (max-width: 480px) {
     .circular-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
     }
 
     .hero-overlay-card h2 {
@@ -1267,5 +1318,124 @@ ul {
 
 .mobile-nav-list .mega-column ul {
     padding-left: 0.5rem;
+}
+
+/* ==========================================================================
+   Mobile App-Like Enhancements
+   ========================================================================== */
+
+@media (max-width: 768px) {
+    /* Full Page Feel */
+    body {
+        padding-bottom: 80px !important; /* Space for bottom nav */
+        background-color: #f8fafc; /* Cleaner app-like background */
+    }
+
+    /* Fixed Header for App Feel */
+    .main-header {
+        position: sticky !important;
+        top: 0;
+        z-index: 1000;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    .header-top {
+        padding: 0.8rem 1rem !important;
+        background: var(--bg-white);
+    }
+
+    .logo img {
+        height: 50px !important;
+    }
+
+    .logo-text h1 {
+        font-size: 1.2rem;
+    }
+
+    .header-top-links {
+        display: none !important; /* Hide extra links, use bottom nav */
+    }
+
+    /* Hero as "Main Screen" */
+    .hero {
+        min-height: 400px;
+        border-radius: 0 0 30px 30px; /* Rounded bottom like a modern app card */
+        margin-bottom: 2rem;
+    }
+
+    /* Bottom Navigation Bar */
+    .mobile-bottom-nav {
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 70px;
+        background-color: var(--bg-white);
+        border-top: 1px solid #eee;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 3000;
+        box-shadow: 0 -5px 20px rgba(0,0,0,0.05);
+        padding-bottom: env(safe-area-inset-bottom); /* Modern iOS support */
+    }
+
+    .nav-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #718096;
+        text-decoration: none;
+        font-size: 0.7rem;
+        transition: var(--transition-smooth);
+        flex: 1;
+    }
+
+    .nav-item i {
+        font-size: 1.4rem;
+        margin-bottom: 4px;
+    }
+
+    .nav-item.active {
+        color: var(--primary-blue);
+    }
+
+    .nav-item.active i {
+        transform: scale(1.1);
+        color: var(--primary-blue);
+    }
+
+    /* Section "Cards" */
+    .container {
+        padding: 0 1.2rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+        text-align: left !important; /* App style headings */
+        padding-left: 0.5rem;
+        border-left: 4px solid var(--accent-gold);
+    }
+
+    .event-row, .scc-card, .news-card {
+        border-radius: 16px;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.04) !important;
+        border: 1px solid #f0f0f0 !important;
+        margin-bottom: 1.5rem;
+    }
+
+    /* Hide Desktop-heavy elements on Mobile */
+    .main-footer .footer-grid {
+        display: none !important;
+    }
+
+    .footer-bottom {
+        padding: 2rem 1rem 2rem;
+        background: var(--bg-white);
+        color: var(--text-muted);
+        text-align: center;
+    }
 }
 
