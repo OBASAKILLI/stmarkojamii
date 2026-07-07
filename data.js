@@ -5,7 +5,7 @@ const siteData = {
         content: `
             <div class="page-content-wrapper">
                 <p class="lead-text">We are currently updating this section of our website to better serve you.</p>
-                <p>Please check back soon for more detailed information. If you have immediate questions, please contact the parish office at <strong>+254 712 345 678</strong> or email us at <strong>office@stmarkojamii.co.ke</strong>.</p>
+                <p>Please check back soon for more detailed information. If you have immediate questions, please contact the parish office at <strong>+254 712 345 678</strong> or email us at <strong>info@stmarkojamii.com</strong>.</p>
                 <a href="index.html" class="btn btn-primary" style="margin-top: 2rem;">Return to Homepage</a>
             </div>
         `
@@ -19,7 +19,7 @@ const siteData = {
                 <h2>Parish Office</h2>
                 <p><strong>Address:</strong> P.O. Box 123, Busia Town, Kenya (Near Busia County Referral Hospital)</p>
                 <p><strong>Phone:</strong> +254 712 345 678</p>
-                <p><strong>Email:</strong> office@stmarkojamii.co.ke</p>
+                <p><strong>Email:</strong> info@stmarkojamii.com</p>
                 <h3>Office Hours</h3>
                 <p>Monday - Friday: 8:00 AM - 4:30 PM</p>
                 <p>Saturday: 9:00 AM - 12:00 PM</p>
@@ -129,7 +129,7 @@ const siteData = {
                 <p>Formerly known as RCIA, OCIA is the process by which adults enter the Catholic Church. Whether you are unbaptized, baptized in another faith, or a baptized Catholic seeking Confirmation and Eucharist, we welcome you!</p>
                 <div style="background: #f9f9f9; padding: 2rem; border-radius: 8px; margin-top: 2rem;">
                     <p><strong>Contact:</strong> Mr. Bill Otieno, Director of Adult Faith Formation</p>
-                    <p><strong>Email:</strong> adultfaith@stmarkojamii.co.ke</p>
+                    <p><strong>Email:</strong> info@stmarkojamii.com</p>
                     <p><strong>Phone:</strong> +254 733 444 555</p>
                 </div>
             </div>
@@ -169,7 +169,7 @@ const siteData = {
                 <h3>Middle School Youth Group (Edge)</h3>
                 <p>Open to 7th and 8th graders. Meets on <strong>Wednesday nights from 6:15 PM – 7:30 PM</strong> in the Youth Room (Parish Service Center).</p>
                 
-                <p style="margin-top: 2rem;"><strong>Contact:</strong> James Omalla, Director of Youth Ministry (youth@stmarkojamii.co.ke)</p>
+                <p style="margin-top: 2rem;"><strong>Contact:</strong> James Omalla, Director of Youth Ministry (info@stmarkojamii.com)</p>
             </div>
         `
     },
@@ -208,7 +208,7 @@ const siteData = {
                 <p>Our Religious Education program serves children in grades K-8 who attend non-Catholic schools. Our mission is to assist parents in the religious, moral, and spiritual formation of their children.</p>
                 <div style="background: #f9f9f9; padding: 2rem; border-radius: 8px; margin-top: 2rem;">
                     <p><strong>Director:</strong> Sr. Mary Atieno</p>
-                    <p><strong>Email:</strong> formation@stmarkojamii.co.ke</p>
+                    <p><strong>Email:</strong> info@stmarkojamii.com</p>
                     <p><strong>Phone:</strong> +254 722 333 444</p>
                 </div>
             </div>
@@ -271,7 +271,7 @@ const siteData = {
                     <i class="fas fa-file-pdf" style="font-size: 3rem; color: #d32f2f; margin-bottom: 1rem;"></i>
                     <h3>Current Bulletin</h3>
                     <p>May 17, 2026</p>
-                    <a href="https://church.stmarkojamii.co.ke/news/bulletin" target="_blank" class="btn btn-primary">View Bulletin Archive</a>
+                    <a href="https://church.stmarkojamii.com/news/bulletin" target="_blank" class="btn btn-primary">View Bulletin Archive</a>
                 </div>
             </div>
         `
@@ -312,7 +312,7 @@ const siteData = {
                     <p><strong>Sunday Mass:</strong> 9:00 AM</p>
                 </div>
                 <div style="text-align: center; margin-top: 2rem;">
-                    <a href="https://church.stmarkojamii.co.ke/news/watch-live" target="_blank" class="btn btn-primary" style="background: var(--primary-blue); color: white;">Go to Live Stream Page</a>
+                    <a href="https://church.stmarkojamii.com/news/watch-live" target="_blank" class="btn btn-primary" style="background: var(--primary-blue); color: white;">Go to Live Stream Page</a>
                 </div>
             </div>
         `
